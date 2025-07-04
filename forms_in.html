@@ -6,23 +6,30 @@
     </head>
 
     <body>
-        <h1>Fill your personal details</h1>
         <form>
-            <label>Enter your name</label><br>
-            <input type="text" id="name"><br><br>
-            <label>Enter your email id</label><br>
-            <input type="text" id="email"><br><br>
-            <label>Enter your age</label><br>
-            <input type="number" id="age"><br><br>
-            <label>Enter your contact number</label><br>
-            <input type="password" id="contact"><br><br>
-            <label>Enter your address</label><br>
-            <input type="text" id="address"><br><br>
+            <fieldset>
+                <legend><h1>Personal Information</h1></legend>
+            <strong>
+            <label>First Name :&nbsp;</label>
+            <input type="text" id="name" placeholder="enter first name"><br><br>
+            <label>Last Name :&nbsp;</label>
+            <input type="text" id="name" placeholder="enter last name"><br><br>
+            <label>Email id :&nbsp;</label>
+            <input type="text" id="email" placeholder="enter email id"><br><br>
+            <label>Age :&nbsp;</label>
+            <input type="text" id="age" placeholder="enter your age"><br><br>
+            <label>Phone number :&nbsp;</label>
+            <input type="tel" id="Phone" placeholder="enter your number"><br><br>
+            <label>Permanent Address :&nbsp;</label>
+            <input type="text" id="address" placeholder="enter your address"><br><br>
+            <label>Country :&nbsp;</label>
+            <input type="text" id="Country" placeholder="which country"><br><br>
             <label>What's your gender</label><br>
             <input type="radio" id="male" name="gender" value="male">Male<br>
-            <input type="radio" id="female" name="gender" value="female">female<br><br>
-            <label>Enter your parents number</label><br>
-            <input type="password" id="contact"><br><br>
+            <input type="radio" id="female" name="gender" value="female">Female<br>
+            <input type="radio" id="robot" name="gender" value="robot">Robot<br><br>
+            <label>Guardian number :&nbsp;</label>
+            <input type="tel" id="contact" placeholder="enter number"><br><br>
             <label>Your favourite season</label><br>
             <input type="checkbox" id="season" value="summer">summer<br>
             <input type="checkbox" id="season" value="winter">winter<br>
@@ -30,17 +37,23 @@
             <input type="checkbox" id="season" value="rainy">rainy<br><br>
             <label>Enter your date of birth</label><br>
             <input type="date" id="date of birth"><br><br>
-            <label>enter your grade</label><br>
+            <label>Enter your grade</label><br>
             <input type="radio" id="A" value="grade">A<br>
             <input type="radio" id="B" value="grade">B<br>
             <input type="radio" id="C" value="grade">C<br>
             <input type="radio" id="D" value="grade">D<br><br>
-            <input type="submit"
-    
-            
-
-
-       
-             </form>
+            <label>Hobbies</label><br>
+            <input type="checkbox" id="Hobbies" value="sports">Playing games<br>
+            <input type="checkbox" id="Hobbies" value="art">Art & Craft<br>
+            <input type="checkbox" id="Hobbies" value="reading">Book reading<br>
+            <input type="checkbox" id="Hobbies" value="learning skills">Skills<br>
+            <input type="checkbox" id="Hobbies" value="singing">Singing<br>
+              
+            </strong>
+            </fieldset>
+        </form>
     </body>
 </html>
+
+
+
