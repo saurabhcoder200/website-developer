@@ -1,0 +1,54 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color: aqua;
+
+}
+
+h1 {
+    color: rgb(86, 226, 226);
+    font-weight: bold;
+
+}
+
+/* Attribute Selector */
+a {
+    color: rgb(194, 206, 202);
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: red;
+
+}
+
+/* Child Selector */
+ul>li {
+    font-weight: 20;
+}
+
+/* :hover Pseudo class */
+ul li:hover {
+    color: red;
+}
+
+/* :nth-child(n) Pseudo-class */
+:nth-child(3) {
+    background-color: aqua;
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::brfore Pseudo-class */
+ul li::before {
+    content: 🚀;
+}
+
+/* ::after pseudo-element */
+a::after {
+    content: 🚀;
+}
