@@ -1,15 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <h1 style="color: blueviolet; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-align: center;">Types of Landform</h1>
-        <style>
-            body{
-                background-color: rgb(206, 182, 151);
-                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDYONMzfxBBGpFfn-GxfMa3Gq3fWjoCltwA&s);
-                background-repeat: no-repeat;
-                background-position: 50% ;
-            
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellow! Lion</title>
+    <style>
+        body {
+            background-color: rgb(248, 176, 82);
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        img {
+            width: 400px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Gradient hr */
+        .gradient-hr {
+            border: 0;
+            height: 200px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* Animated hr */
+        .animated-hr {
+            border: 0;
+            height: 200px;
+            width: 80%;
+            margin: 20px auto;
+            background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
+            background-size: 600% 600%;
+            animation: gradientMove 3s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {
+                background-position: 0% 50%;
             }
-        </style>
-    </head>
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hellow! Lion</h1>
+    <img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/65346947755e56001d2510f5.jpg" alt="Lion">
+
+    <div class="label">Gradient Effect</div>
+    <hr class="gradient-hr">
+
+    <div class="label">Animation Effect</div>
+    <hr class="animated-hr">
+    
+</body>
+
 </html>
