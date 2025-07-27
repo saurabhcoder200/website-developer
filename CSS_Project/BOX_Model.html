@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Pizza World</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e2eff3;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, green, orange);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #c62828;
+            margin-bottom: 10px;
+        }
+
+        .history {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background-color: #fff;
+            border: 3px solid #c62828;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .history img {
+            border-radius: 22px;
+            width: 250px;
+            flex-shrink: 0;
+        }
+
+        .history-text {
+            color: #323702;
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border: 2px solid #c62828;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-bottom: 2px solid #c62828;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0 5px;
+            color: #c62828;
+        }
+
+        .menu-item p {
+            margin: 0 0 10px;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Delicious Pizza World</h1>
+        <p>Authentic Italian taste in every slice 🍕</p>
+    </header>
+
+    <section class="about">
+        <h2>About Our Pizza</h2>
+        <p style="font-weight: bold;" >We craft every pizza with passion, using the freshest ingredients, hand-tossed dough, and our secret homemade
+            sauce.
+            Experience the perfect blend of crispy crust, melty cheese, and flavorful toppings straight from our stone
+            oven.</p>
+    </section>
+
+    <section>
+        <h2 style="color: #063161; text-align: center; text-decoration: underline 2px;">Pizza: A global delight with
+            Italian roots</h2>
+
+        <div class="history">
+            <img src="https://content.jdmagicbox.com/v2/comp/delhi/n9/011pxx11.xx11.181026200624.w5n9/catalogue/game-of-pizza-tagore-garden-delhi-moderate-restaurants-rs-500-to-rs-1000--ct1ngfvdsj.jpg"
+                alt="pizza">
+            <div class="history-text">
+                Flatbreads with toppings have been consumed since ancient times, with mentions in ancient Greece, Rome,
+                and Persia.
+                Modern pizza, specifically Margherita pizza, gained prominence in Naples in the late 18th century, and
+                is credited to
+                Neapolitan pizzaiolo Raffaele Esposito. He created a pizza adorned with tomatoes, mozzarella, and basil
+                to represent the
+                colors of the Italian flag in honor of Queen Margherita of Savoy in 1889. This propelled pizza into the
+                national
+                spotlight and paved the way for its global popularity.
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 style="color: #c62828; text-align: center;">Our Menu</h2>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP0HbRY0SsECXq3XHqjXUBw3CqK1VfE5PX1w&s" alt="Margherita">
+                <h3>Margherita</h3>
+                <p>Classic delight with tomato, mozzarella, and fresh basil.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.allrecipes.com/thmb/VlxoJt8KV9sTgRn91bCyNS-2MsU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/What-is-Pepperoni-4x3-b45a1d46776a49d7bc24618aa1bd3f69.jpg" alt="Pepperoni">
+                <h3>Pepperoni</h3>
+                <p>All-time favorite loaded with spicy pepperoni and cheese.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/shaheen-ali20170510144238021.jpeg" alt="Veggie Supreme">
+                <h3>Veggie Supreme</h3>
+                <p>Colorful mix of bell peppers, olives, onions, and mushrooms.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://www.allrecipes.com/thmb/qZ7LKGV1_RYDCgYGSgfMn40nmks=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-24878-bbq-chicken-pizza-beauty-4x3-39cd80585ad04941914dca4bd82eae3d.jpg" alt="BBQ Chicken">
+                <h3>BBQ Chicken</h3>
+                <p>Smoky BBQ sauce topped with tender chicken and onions.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>📍 Visit us at Pizza Street, Food City | ☎️ Call: 123-456-7890 | © 2025 Delicious Pizza World</p>
+    </footer>
+</body>
+
+</html>
+
+
+
