@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: #2e4d25;
+            background: linear-gradient(to bottom right, #b0d1a8, #e8f5dc);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #362626, #4f2f2f);
+            padding: 20px;
+            text-align: center;
+            color: azure;
+            border-bottom: 5px solid #73ad21;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .title {
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+
+        .box {
+            border: 3px dashed #73ad21;
+            padding: 15px;
+            margin: 40px 0;
+            width: 320px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+        }
+
+        .relative {
+            position: relative;
+            left: 40px;
+            background-color: #f0e4d7;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 120px;
+            right: 20px;
+            background-color: #fde2e4;
+            width: 250px;
+            border: 3px solid #e63946;
+        }
+
+        .absolute-wrapper {
+            position: relative;
+            /* parent for absolute */
+            height: 200px;
+            background: linear-gradient(to right, #d9f8c4, #b0d1a8);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 40px 0;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 50px;
+            top: 60px;
+            background-color: #fff3b0;
+            border: 3px solid #f77f00;
+        }
+
+        .static {
+            position: static;
+            background-color: #cce3de;
+        }
+
+        footer {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #3a3a3a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">🎨 CSS Positioning Treasure</h2>
+        <p>Decorated boxes showing: relative, fixed, absolute, and static positioning.</p>
+    </header>
+
+    <div class="box relative">
+        🧭 This box has <b>position: relative;</b>
+    </div>
+
+    <div class="box fixed">
+        📌 This box has <b>position: fixed;</b>
+        (It stays in the same spot when you scroll)
+    </div>
+
+    <div class="absolute-wrapper">
+        <div class="box absolute">
+            🪙 This box has <b>position: absolute;</b>
+            (It’s placed relative to its parent)
+        </div>
+    </div>
+
+    <div class="box static">
+        📦 This box has <b>position: static;</b>
+        (The default position)
+    </div>
+
+    <footer>
+        ✨ Decorate your HTML treasures with CSS magic!
+    </footer>
+</body>
+
+</html>
