@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography Example</title>
+    <title>Cricket Typography</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -14,7 +14,7 @@
             font-size: 2.5rem;
             letter-spacing: 2px;
             text-transform: uppercase;
-            color: #0d6efd;
+            color: #198754;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
@@ -26,9 +26,14 @@
 
         .quote {
             font-style: italic;
-            border-left: 5px solid #0d6efd;
+            border-left: 5px solid #198754;
             padding-left: 10px;
             color: #555;
+        }
+
+        .player-name {
+            font-weight: bold;
+            color: #0d6efd;
         }
     </style>
 </head>
@@ -36,31 +41,43 @@
 <body class="p-4">
 
     <div class="container">
-        <!-- Heading -->
-        <h1 class="fancy-heading">Welcome to My Web Page</h1>
+        <!-- Cricket Heading -->
+        <h1 class="fancy-heading text-center">Cricket: The Gentleman's Game</h1>
 
-        <!-- Lead text -->
-        <p class="lead">This is a simple demonstration of <span class="highlight">Bootstrap typography</span> with some
-            custom CSS effects.</p>
+        <!-- Intro Paragraph -->
+        <p class="lead text-center">
+            Cricket is more than just a sport; it is a passion for millions around the world.
+            From <span class="highlight">Test matches</span> to <span class="highlight">T20 thrillers</span>,
+            the game unites fans across continents.
+        </p>
 
-        <!-- Paragraph -->
-        <p class="text-muted">Bootstrap provides utility classes for headings, lead paragraphs, muted text, alignment,
-            and more.</p>
+        <!-- History Paragraph -->
+        <p class="text-muted">
+            The origins of cricket date back to the 16th century in England. Over time, it evolved
+            into an international sport with formats like Test cricket, One Day Internationals (ODIs), and Twenty20.
+            Today, cricket is celebrated worldwide, especially in countries like India, Australia, and England.
+        </p>
 
-        <!-- Blockquote -->
+        <!-- Inspirational Cricket Quote -->
         <blockquote class="quote">
-            "Good typography is invisible, bad typography is everywhere."
+            "You don’t win or lose the games because of the 11 you select. You win or lose with what those 11 do on the
+            field." — Rahul Dravid
         </blockquote>
 
-        <!-- Text alignment examples -->
-        <p class="text-start">Left aligned text using <code>.text-start</code>.</p>
-        <p class="text-center">Center aligned text using <code>.text-center</code>.</p>
-        <p class="text-end">Right aligned text using <code>.text-end</code>.</p>
+        <!-- Famous Players Section -->
+        <h2 class="mt-4">Legendary Players</h2>
+        <ul>
+            <li><span class="player-name">Sachin Tendulkar</span> — Known as the 'God of Cricket', he has over 34,000
+                international runs.</li>
+            <li><span class="player-name">Virat Kohli</span> — One of the modern-day greats, famous for his consistency
+                in all formats.</li>
+            <li><span class="player-name">MS Dhoni</span> — Captain Cool, led India to multiple ICC trophies.</li>
+        </ul>
 
-        <!-- Display headings -->
-        <h1 class="display-1">Display 1</h1>
-        <h2 class="display-2">Display 2</h2>
-        <h3 class="display-3">Display 3</h3>
+        <!-- Display Typography -->
+        <h1 class="display-1 text-success">Test</h1>
+        <h2 class="display-2 text-primary">ODI</h2>
+        <h3 class="display-3 text-warning">T20</h3>
     </div>
 
     <!-- Bootstrap JS -->
