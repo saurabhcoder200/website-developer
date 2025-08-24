@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam's Precious Memories</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: white !important;
+    }
+
+    .carousel-caption {
+      background: #00000099; /* dark transparent background */
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .carousel-caption h5,
+    .carousel-caption p {
+      color: #fff !important; /* white text for visibility */
+    }
+
+    .carousel-item img {
+      height: 450px;
+      object-fit: cover;
+    }
+    .about-section, .contact-section {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    .gallery-section {
+      margin-top: 40px;
+    }
+    .gallery-section img {
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .gallery-section img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sam's Memories</a>
+      <div class="ms-auto">
+        <a class="btn btn-light btn-sm" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Memories Slider -->
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">Sam's Precious Memories</h2>
+
+    <div id="memoriesCarousel" class="carousel slide shadow-lg rounded" data-bs-ride="carousel" data-bs-interval="3000">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#memoriesCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/1015/1200/450" class="d-block w-100" alt="Memory 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Family Trip</h5>
+            <p>A beautiful day with family at the hills.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://a.storyblok.com/f/112937/568x464/dad2dd6bc9/how-having-friends-around-the-world-makes-you-an-awesome-person_568x464.png" class="d-block w-100" alt="Memory 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Best Friends</h5>
+            <p>Unforgettable moments with friends.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.vancopayments.com/hubfs/Graduation%20-%20Cap%20throw.png" class="d-block w-100" alt="Memory 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Graduation Day</h5>
+            <p>A day full of happiness and achievements.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#memoriesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#memoriesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="container about-section">
+    <h3>About Sam</h3>
+    <p>
+      Sam is someone who truly values every moment spent with his family, friends, and loved ones. 
+      This webpage is a collection of his most precious memories that he wishes to keep forever. 
+      Each picture tells a story of happiness, love, and togetherness.
+    </p>
+  </div>
+
+  <!-- Gallery Section -->
+  <div class="container gallery-section">
+    <h3 class="text-center mb-4">Photo Gallery</h3>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1011/400/300" class="img-fluid shadow" alt="Gallery 1">
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1016/400/300" class="img-fluid shadow" alt="Gallery 2">
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1020/400/300" class="img-fluid shadow" alt="Gallery 3">
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1027/400/300" class="img-fluid shadow" alt="Gallery 4">
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1031/400/300" class="img-fluid shadow" alt="Gallery 5">
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/id/1035/400/300" class="img-fluid shadow" alt="Gallery 6">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container contact-section">
+    <h3>Contact Sam</h3>
+    <form>
+      <div class="mb-3">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Your Email</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sam's Memories | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
