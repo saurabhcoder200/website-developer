@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiplication Function</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        header {
+            padding: 20px;
+            background-color: aqua;
+            font-size: 40px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        Multiplication of 5
+    </header>
+    <br><br> <br>
+    <script>
+        function multiply(a, b) {
+            // check if second number is missing (undefined)
+            if (b === undefined) {
+                b = 1;   // default to 1
+            }
+            return a * b;
+        }
+
+        document.write("multiply of 5 * 1 = " + multiply(5) + "<br>"); // 5
+        document.write("multiply of 5 * 2 = " + multiply(5,2) + "<br>");       // 10
+        document.write("multiply of 5 * 3 = " + multiply(5,3) + "<br>");       // 10
+        document.write("multiply of 5 * 4 = " + multiply(5,4) + "<br>");       // 10
+        document.write("multiply of 5 * 5 = " + multiply(5,5) + "<br>");       // 10
+        document.write("multiply of 5 * 6 = " + multiply(5,6) + "<br>");       // 10
+        document.write("multiply of 5 * 7 = " + multiply(5,7) + "<br>");       // 10
+        document.write("multiply of 5 * 8 = " + multiply(5,8) + "<br>");       // 10
+        document.write("multiply of 5 * 9 = " + multiply(5,9) + "<br>");       // 10
+        document.write("multiply of 5 * 10 = " + multiply(5,10) + "<br>");       // 10
+    </script>
+</body>
+
+</html>
