@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            body {
+                background-color: rgb(170, 90, 170);
+                border-width: 3px;
+                border-color: aquamarine;
+            
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Javascript Array Sort</h2>
+        <p>Click the button to sort the array in ascending order</p>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <P id="result"></P>
+        <script>
+            var points = [40, 100, 87, 67, 98, 65, 70, 98, 986, 76,1, 7, 87, 98]
+            document.getElementById("result").innerHTML = points ;
+            function ascending() {
+                points.sort(function (a,b){return a-b});
+                document.getElementById("result").innerHTML = points;
+            }
+            function descending() {
+                points.sort(function (a,b){return b-a});
+                document.getElementById("result").innerHTML = points;
+            }
+        </script>
+    </body>
+</html>
