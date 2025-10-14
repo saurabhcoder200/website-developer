@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>javascript arrow function</h1>
+        <p>This example shows an arrow function with a parametre.</p>
+
+        
+        <button onclick="Addition()">Addition</button>
+        <p id="result"></p>
+        <button onclick="multiplication()">multiplication</button>
+        <p id="res1"></p>
+        <button onclick="Subtraction()">Subtraction</button>
+        <p id="res2"></p>
+        <button onclick="division()">division</button>
+
+        <p id="res3"></p>
+        <script>
+
+            function Addition() { add = (a,b) => a+b;
+            document.getElementById("result").innerHTML = add(4,6); }
+
+            function multiplication() { product = (a,b) => a*b;
+            document.getElementById("res1").innerHTML = product(5,8)}
+
+            function Subtraction(){ subtract = (a,b) => a-b;
+            document.getElementById("res2").innerHTML = subtract(15,10);}
+
+            function division(){ division = (a,b) => a/b;
+            document.getElementById("res3").innerHTML = division(500,5);}
+
+        </script>
+    </body>
+</html>
